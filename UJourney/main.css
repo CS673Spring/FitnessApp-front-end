@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+    height: -webkit-fill-available;
+}
+
+/********** START OF INDEX PAGE **********/
+.landing-page {
+    height: -webkit-fill-available;
+    background-image: url("images/man-pose-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    border: 1px solid black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+}
+
+.footer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page h1 {
+    color: white;
+    transform: scale(1, 1.2);
+    padding: 0 20px;
+}
+
+.landing-page button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.landing-page a {
+    text-decoration: none;
+}
+/********** END OF INDEX PAGE **********/
+
+/********** START OF DETAILS PAGE **********/
+.box-2 {
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.body-2 {
+    border: 1px solid black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.footer-2 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.details-page {
+    background-color: #395b64;
+    background-image: url("images/man-holding-ball.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.details-page h1 {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.gender-button {
+    width: 5em;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+:checked + span {
+    font-weight: bold;
+    color: yellow;
+}
+
+input[type="radio"] {
+    width: 1px;
+    height: 1px;
+}
+
+.input {
+    padding-top: 2rem;
+}
+
+.input-field {
+    color: white;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    padding: 0.25rem 4rem;
+}
+
+.input-field::placeholder {
+    color: #bdbdbd;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.action-button {
+    color: black;
+    background-color: #f5989d;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/********** END OF DETAILS PAGE **********/
