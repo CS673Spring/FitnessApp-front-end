@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body class="sign-page"> 
+        <div class="box" id="app">
+            <div class="body-sign">
+                <div class="word-div">Sign up</div>
+                <div class="info-div">
+                    <div class="name-div">
+                        <input type="text" class="input-name" placeholder="First name" required="">
+                        <div class="empty-div"></div>
+                        <input type="text" class="input-name" placeholder="Last name" required="">
+                    </div>
+                    <div class="input">
+                        <input type="email" class="input-field" placeholder="Your email" required="">
+                    </div>
+                    <div class="input">
+                        <input type="password" class="input-field" placeholder="Password" required="">
+                    </div>
+                </div>
+                <div class="button-div2">
+                    <button>Sign Up</button>
+                </div>
+            </div>   
+        </div>
+        <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js" charset="utf-8"></script>
+        <script>
+            var app = new Vue({
+                            el: '#app',
+                            data: {
+                                downIcon: true,
+                                account: '',
+                                password: ''
+                            }
+                        });
+        </script>
+    </body>
+</html>
