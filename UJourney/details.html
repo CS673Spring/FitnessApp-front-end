@@ -8,23 +8,16 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body class="details-page">
-        <form>
-            <div class="box-2">
-                <div class="body-2">
-                    <h1>Your details</h1>
+        <div class="box-details">
+            <div class="body-details">
+                <h1>Your details</h1>
 
-                    <div>
-                        <label class="gender-button">
-                            <input type="radio" name="answer" required />
-                            <span>Male</span>
-                        </label>
+                <div>
+                    <button class="gender-button">Male</button>
+                    <button class="gender-button">Female</button>
+                </div>
 
-                        <label class="gender-button">
-                            <input type="radio" name="answer" required />
-                            <span>Female</span>
-                        </label>
-                    </div>
-
+                <form>
                     <div class="input">
                         <input type="number" class="input-field" placeholder="Your weight (lbs)" required />
                     </div>
@@ -36,13 +29,15 @@
                     <div class="input">
                         <input type="number" class="input-field" placeholder="Date of birth mm/dd/yyyy" required />
                     </div>
-                </div>
+                </form>
+            </div>
 
-                <div class="footer-2">
+            <a href="adultTrainingStyle.html">
+                <div class="footer-details">
                     <button class="action-button">Continue</button>
                 </div>
-            </div>
-        </form>
+            </a>
+        </div>
 
         <footer></footer>
     </body>
