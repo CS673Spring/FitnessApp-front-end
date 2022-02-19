@@ -51,9 +51,9 @@
 						data_l.email = this.email;
 						data_l.password = this.password;
 						var formData = JSON.stringify(data_l);
-						console.log(datas);
+						console.log(formData);
                         $.ajax({
-							url: "/api/auth/jwt/create/",
+							url: "http://localhost:8000/api/auth/jwt/create/",
 							type: "post",
 							dataType: "json",
 							data: formData,
@@ -63,7 +63,7 @@
 								if (rs.code == "0") {
 									console.log(rs);
 									alert("Login successful!");
-									window.location.href = "index_page.html";
+									window.location.href = "";
 								} else {
 									alert(rs.msg);
 								}
