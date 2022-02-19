@@ -65,10 +65,9 @@
                                 alert("Login successful!");
                                 window.location.href = "index_page.html";
 							},
-							error: function(rs, e) {
-							    console.error(rs.status);
-                                console.error(rs.responseText);
-                                alert(rs.msg);
+							error: function(xhr, status, error){
+                                var errorMessage = xhr.status + ': ' + xhr.statusText
+                                alert('Error - ' + errorMessage);
                             }
 						});
                     },
