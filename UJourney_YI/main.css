@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+    height: -webkit-fill-available;
+}
+
+/********** START OF INDEX PAGE **********/
+.landing-page {
+    height: -webkit-fill-available;
+    background-image: url("images/man-pose-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    border: 1px solid black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+}
+
+.footer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page h1 {
+    color: white;
+    transform: scale(1, 1.2);
+    padding: 0 20px;
+}
+
+.landing-page button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.landing-page a {
+    text-decoration: none;
+}
+/********** END OF INDEX PAGE **********/
+
+/********** START OF DETAILS PAGE **********/
+.details-page {
+    background-color: #395b64;
+    background-image: url("images/man-holding-ball.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.box-details {
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.body-details {
+    border: 1px solid black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.footer-details {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gender-button {
+    width: 9em;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.gender-button:focus {
+    border-color: aqua;
+    color: aqua;
+    font-weight: 300;
+}
+
+.details-page h1 {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.input {
+    padding-top: 2rem;
+}
+
+.input-field {
+    color: white;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    padding: 0.25rem 4rem;
+}
+
+.input-field::placeholder {
+    color: #bdbdbd;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.action-button {
+    color: black;
+    background-color: #f5989d;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/********** END OF DETAILS PAGE **********/
+
+/********** START OF ADULT TRAINING PAGE **********/
+.adult-page {
+    background-color: #395b64;
+    background-image: url(images/man-holding-barbell.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.box-adult {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-adult {
+    border: 1px solid black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+}
+
+.footer-adult {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adult-page .adult-button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.body-adult button {
+    width: 15em;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9px 2px;
+    cursor: pointer;
+    background-color: transparent;
+    letter-spacing: 4px;
+}
+
+.body-adult h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+
+/********** END OF ADULT TRAINING PAGE **********/
+
+/********** START OF SENIOR TRAINING PAGE **********/
+.senior-page {
+    background-color: #395b64;
+    background-image: url(images/man-holding-barbell.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.box-senior {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-senior {
+    border: 1px solid black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+}
+
+.footer-senior {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.senior-page .senior-button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 110px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.body-senior button {
+    width: 15em;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9px 2px;
+    cursor: pointer;
+    background-color: transparent;
+    letter-spacing: 4px;
+}
+
+.body-senior h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+/********** END OF 
+SENIOR TRAINING PAGE **********/
+
+/********** START OF 
+MOTIVATION PAGE **********/
+.motivational-page{
+    background: linear-gradient(#90b4c0 70%, #395b64 70%);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-top {
+    height: 70vh;
+    margin: 0 30px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-bottom {
+    margin: 0 20px;
+    height: 15vh;
+    border: 2px solid green;
+}
+
+.body-motivation h1{
+    color: white;
+    text-decoration: underline;
+    transform: scale(1, 1.2);
+    padding: 18px;
+}
+
+.footer-motivation h2{
+    color: white;
+    padding-top: 20px;
+}
+
+/********** END OF MOTIVATION PAGE **********/
+
+/********** START OF LOGIN, SIGNUP PAGE **********/
+.login-page {
+    background-color: #395b64;
+}
+
+.box-login {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-login {
+    border: 1px solid black;
+    height: 70vh;
+}
+
+.body-login h1 {
+    color: white;
+    transform: scale(1, 1.2);
+}
+
+.body-child-login {
+    border: 1px solid black;
+    margin: 30px;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+.input-spacing {
+    padding-top: 2rem;
+}
+
+.login-input-field {
+    color: #bdbdbd;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.forgot-div {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.login-button-div {
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button-div button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 113px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.body-login p {
+    color: white;
+}
+
+.sign-div{
+    color: #bdbdbd;
+}
+
+.body-login span {
+    color: white;
+}
+/********** END OF LOGIN, SIGNUP PAGE **********/
+
+
+
+/* .log-page,.sign-page,.forget_pwd-page{
+    background-color: #395b64;
+}
+
+.box{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.body-log{
+    border: 1px solid black;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.word-div{
+    color: white;
+    font-size: 46px;
+    font-weight: bolder;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+.input {
+    padding-top: 2rem;
+}
+
+.input-field {
+    color: #bdbdbd;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.forgot-div{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.button-div{
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-top: 24px;
+}
+
+.log-page button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 113px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.foot-log{
+    border: 1px solid black;
+    height: 4vh;
+    display: flex;  
+}
+
+.foot1{
+    color:#bdbdbd;
+    font-size: 14px;
+}
+
+.foot2{
+    color: white;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.body-sign{
+    border: 1px solid black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.info-div{
+    margin-top: 6vh;
+    width: 100%;
+    height: auto;
+}
+
+.name-div{
+    display: flex;
+}
+
+.input-name{
+    width: 34vw;
+    height: auto;
+    color: #bdbdbd;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 1rem;
+}
+.empty-div{
+    width: 10vw;
+    height: auto;
+}
+
+.button-div2{
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+}
+
+.sign-page button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 113px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.body-pwd{
+    border: 1px solid black;
+    height: 36vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.reminder-div{
+    color: #bdbdbd;
+    font-size: 16px;
+}
+
+.forget_pwd-page button {
+    background-color: #f5989d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    padding: 14px 94px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+} */
