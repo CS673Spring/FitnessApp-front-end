@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                height: -webkit-fill-available;
+            }
+
+            body {
+                font-family: "Avenir";
+                src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+                height: -webkit-fill-available;
+            }
+
+            /********** START OF INDEX PAGE **********/
+            .prompt-page {
+                background-color: #395b64;
+            }
+
+            .box-prompt {
+                border: 1px solid green;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .body-prompt {
+                border: 1px solid red;
+                height: 70vh;
+            }
+
+            .body-prompt h1 {
+                border: 1px solid gold;
+                color: white;
+                transform: scale(1, 1.2);
+                margin: 30px;
+                
+            }
+
+            .body-child-prompt {
+                border: 1px solid cyan;
+                margin-top: 25%;
+                margin: 30px;
+            }
+
+            .prompt-page button {
+                background-color: #f5989d;
+                color: black;
+                border-radius: 8px;
+                border: none;
+                font-weight: 600;
+                padding: 20px 113px;
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 50px 0;
+            }
+        </style>
+    </head>
+    <body class="prompt-page">
+        <div class="box-prompt">
+            <div class="body-prompt">
+                <div>
+                    <h1>Choose an account</h1>
+                    <div class="body-child-prompt">
+                        <button>Trainee</button>
+                        <button>Trainer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

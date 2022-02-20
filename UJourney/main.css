@@ -325,7 +325,7 @@ SENIOR TRAINING PAGE **********/
 
 /********** START OF 
 MOTIVATION PAGE **********/
-.motivational-page{
+.motivational-page {
     background: linear-gradient(#90b4c0 70%, #395b64 70%);
 }
 
@@ -349,14 +349,14 @@ MOTIVATION PAGE **********/
     border: 2px solid green;
 }
 
-.body-motivation h1{
+.body-motivation h1 {
     color: white;
     text-decoration: underline;
     transform: scale(1, 1.2);
     padding: 18px;
 }
 
-.footer-motivation h2{
+.footer-motivation h2 {
     color: white;
     padding-top: 20px;
 }
@@ -369,7 +369,7 @@ MOTIVATION PAGE **********/
 }
 
 .box-login {
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -451,5 +451,60 @@ MOTIVATION PAGE **********/
 }
 /********** END OF LOGIN, SIGNUP PAGE **********/
 
+/********** START OF ACCOUNT PAGE **********/
+.account-page {
+    background-color: #395b64;
+}
+
+.box-account {
+    height: 80vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top-account {
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.middle-account {
+    color: white;
+    line-height: 40px;
+    border: 1px solid #f5989d;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.info-columns-2 {
+    text-align: end;
+}
+
+.bottom-account {
+    color: white;
+    border: 1px solid #f5989d;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 0 20px;
+}
+
+.cropped1 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #f5989d;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+/********** END OF ACCOUNT PAGE **********/
 
 
