@@ -52,16 +52,16 @@
                 methods: {
                     signup(){
                         if (this.Fname == ''||this.Lname == ''||this.email == ''||this.password == '') {
-							alert("The information cannot be empty");
+                            alert("The information cannot be empty");
                             location.reload();
                         }
                         var datas= JSON.parse(localStorage.info);
-                        datas.Fname = this.Fname;
-                        datas.Lname = this.Lname;
-						datas.email = this.email;
-						datas.password = this.password;
-						var formdata = JSON.stringify(datas);
-						console.log(datas);
+                        datas.first_name = this.Fname;
+                        datas.last_name = this.Lname;
+                        datas.email = this.email;
+                        datas.password = this.password;
+                        var formdata = JSON.stringify(datas);
+                        console.log(datas);
                         $.ajax({
                             url: "http://localhost:8000/api/auth/users/",
                             type: "post",
