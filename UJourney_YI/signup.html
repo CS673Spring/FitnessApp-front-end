@@ -55,31 +55,29 @@
 							alert("The information cannot be empty");
                             location.reload();
                         }
-                        var data_s = {};
-                        data_s.Fname = this.Fname;
-                        data_s.Lname = this.Lname;
-						data_s.email = this.email;
-						data_s.password = this.password;
-						var formdata = JSON.stringify(data_op);
+                        var datas= JSON.parse(localStorage.info);
+                        datas.Fname = this.Fname;
+                        datas.Lname = this.Lname;
+						datas.email = this.email;
+						datas.password = this.password;
+						var formdata = JSON.stringify(datas);
 						console.log(datas);
                         $.ajax({
-							url: "",
-							type: "post",
-							dataType: "json",
-							data: formdata,
-							contentType: "application/json",
-							success: function(rs) { 
+                            url: "http://localhost:8000/api/auth/users/",
+                            type: "post",
+                            dataType: "json",
+                            data: formdata,
+                            contentType: "application/json",
+                            success: function(rs) {
                                 console.log(rs);
-								if (rs.code == "0") {
-									console.log(rs);
-									alert("Registration successful!");
-									window.location.href = "index_page.html";
-								} else {
-									alert(rs.msg);
-								}
-							},
-							error: function() {}
-						});
+                                alert("Registration successful!");
+                                window.location.href = "index_page.html";
+                            },
+                            error: function(xhr, status, error){
+                                var errorMessage = xhr.status + ': ' + xhr.statusText
+                                alert('Error - ' + errorMessage);
+                                }
+                        });
                     }
                 }
             })
