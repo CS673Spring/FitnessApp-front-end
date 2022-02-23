@@ -56,14 +56,14 @@
                             location.reload();
                         }
                         var datas= JSON.parse(localStorage.info);
-                        datas.Fname = this.Fname;
-                        datas.Lname = this.Lname;
-						datas.email = this.email;
-						datas.password = this.password;
-						var formdata = JSON.stringify(datas);
-						console.log(datas);
+                            datas.Fname = this.Fname;
+                            datas.Lname = this.Lname;
+                            datas.email = this.email;
+                            datas.password = this.password;
+                            var formdata = JSON.stringify(datas);
+                            console.log(datas);
                         $.ajax({
-                            url: "http://localhost:8000/api/auth/users/",
+                            url: "http://localhost:8000/api/users/register/",
                             type: "post",
                             dataType: "json",
                             data: formdata,
