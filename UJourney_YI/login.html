@@ -53,7 +53,7 @@
 						var formData = JSON.stringify(data_l);
 						console.log(formData);
                         $.ajax({
-							url: "http://localhost:8000/api/auth/jwt/create/",
+							url: "http://localhost:8000/api/users/login/",
 							type: "post",
 							dataType: "json",
 							data: formData,
