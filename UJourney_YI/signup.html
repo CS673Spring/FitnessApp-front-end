@@ -15,11 +15,11 @@
 
                     <div class="input-div">
                         <div class="input-spacing">
-                            <input type="text" id="Fname" v-model="Fname" class="login-input-field" placeholder="First name" required="" />
+                            <input type="text" id="first_name" v-model="first_name" class="login-input-field" placeholder="First name" required="" />
                         </div>
 
                         <div class="input-spacing">
-                            <input type="text" id="Lname" v-model="Lname" class="login-input-field" placeholder="Last name" required="" />
+                            <input type="text" id="last_name" v-model="last_name" class="login-input-field" placeholder="Last name" required="" />
                         </div>
 
                         <div class="input-spacing">
@@ -43,41 +43,40 @@
             var app = new Vue({
                 el: '#app',
                 data: {
-                    Fname: '',
-                    Lname: '',
+                    first_name: '',
+                    last_name: '',
                     email: '',
                     password: ''
                 },
                 mounted: function() {},
                 methods: {
                     signup(){
-                        if (this.Fname == ''||this.Lname == ''||this.email == ''||this.password == '') {
+                        if (this.first_name == ''||this.last_name == ''||this.email == ''||this.password == '') {
 							alert("The information cannot be empty");
-                            location.reload();
                         }
-                        var datas= JSON.parse(localStorage.info);
-                            datas.Fname = this.Fname;
-                            datas.Lname = this.Lname;
-                            datas.email = this.email;
-                            datas.password = this.password;
-                            var formdata = JSON.stringify(datas);
-                            console.log(datas);
+                        var data= {};
+                            data.first_name = this.first_name;
+                            data.last_name = this.last_name;
+                            data.email = this.email;
+                            data.password = this.password;
+                            // var formdata = JSON.stringify(data);
+                            console.log(data);
                         $.ajax({
                             url: "http://localhost:8000/api/users/register/",
                             type: "post",
                             dataType: "json",
-                            data: formdata,
+                            data: JSON.stringify(data),
                             contentType: "application/json",
                             success: function(rs) {
                                 console.log(rs);
-                                alert("Registration successful!");
-                                window.location.href = "index_page.html";
-                            },
-                            error: function(xhr, status, error){
+								alert("Registration successful!");
+								window.location.href = "index_page.html";
+							},
+							error: function(xhr, status, error){
                                 var errorMessage = xhr.status + ': ' + xhr.statusText
                                 alert('Error - ' + errorMessage);
-                                }
-                        });
+                            }
+						});
                     }
                 }
             })
