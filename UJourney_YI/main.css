@@ -427,7 +427,7 @@ MOTIVATION PAGE **********/
     justify-content: center;
 }
 
-.login-button-div button {
+.login-button-div input {
     background-color: #f5989d;
     color: black;
     border-radius: 8px;
@@ -448,6 +448,10 @@ MOTIVATION PAGE **********/
 
 .sign-div{
     color: #bdbdbd;
+}
+
+.sign-div a{
+    color: white;
 }
 
 .body-login span {
