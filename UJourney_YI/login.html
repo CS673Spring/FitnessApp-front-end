@@ -46,12 +46,12 @@
         </div>
         <!-- end login form -->
 
-        <div class="forgot-div" @click="jump_to_Fpwd()">Forgot password?</div>
+        <a href="forgotpassword.html" class="forgot-div">Forgot password?</a>
 
         <!-- <div class="sign-div"><span>Don't have an account? </span>Sign up</div> -->
         <div class="sign-div">
           Don't have an account?
-          <span @click="jump_to_signup()">Sign up</span>
+          <a href="signup.html" >Sign up</a>
         </div>
       </div>
     </div>
@@ -59,8 +59,8 @@
 
     <script src="js/jquery.js" charset="utf-8"></script>
     <script>
-      console.log($("#username").val());
-      // start form jquery
+
+      // start login
       $("#login-form").submit(function (event) {
         event.preventDefault();
         var formData = {
@@ -92,7 +92,7 @@
         });
         // end ajax connection
       });
-      // end submit jquery
+      // end login
     </script>
   </body>
 </html>
