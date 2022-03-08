@@ -108,23 +108,23 @@
                             },
                             success: function(rs) {
                                 if (rs.data != null) {
-                                    this.name = rs.data.user.name;
-                                    this.age = rs.data.age;
-                                    this.gender = rs.data.gender;
-                                    this.weight = rs.data.weight + "LB";
+                                    this.name = rs.data.username;
+                                    this.age = rs.data.user_profile.age;
+                                    this.gender = rs.data.user_profile.gender;
+                                    this.weight = rs.data.user_profile.weight + "LB";
                                     
                                     // Get Height
-                                    var feet = rs.data.height / 12;
-                                    var inch = rs.data.height % 12;
+                                    var feet = rs.data.user_profile.height / 12;
+                                    var inch = rs.data.user_profile.height % 12;
                                     this.height = feet + "\'" + inch + "\"";
 
                                     // Get Description
                                     if(rs.data.description != null) {
-                                        this.description = rs.data.description;
+                                        this.description = rs.data.user_profile.description;
                                     }
 
                                     // Get Age
-                                    var dob = rs.data.dob;
+                                    var dob = rs.data.user_profile.dob;
                                     var today = new Date();
                                     var yearDiff = today.getFullYear - parseInt(dob.substring(0,4));
                                     var monthDiff = today.getMonth - parseInt(dob.substring(5, 7));
