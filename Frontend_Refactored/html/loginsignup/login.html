@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
-        <link rel="stylesheet" href="/css/loginsignup/loginsignup.css" />
+        <link rel="stylesheet" href="../../css/loginsignup/loginsignup.css" />
     </head>
 
     <body class="login-page">
@@ -66,10 +66,9 @@
 								console.log(rs);
                                 if (rs != null) {
 									console.log(rs);
-                                    window.localStorage.setItem('refreshToken', rs.refresh);
-                                    window.localStorage.setItem('accessToken', rs.access);
+                                    window.localStorage.setItem('token', rs.token);
 									alert("Login successful!");
-									window.location.href = "/html/home/homepage.html";
+									window.location.href = "../home/homepage.html";
 								} else {
 									alert(rs.msg);
 								}

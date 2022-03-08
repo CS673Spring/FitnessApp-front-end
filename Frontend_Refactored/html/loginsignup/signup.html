@@ -73,6 +73,7 @@
                             contentType: "application/json",
                             success: function(rs) {
                                 console.log(rs);
+                                window.localStorage.setItem('token', rs.token);
                                 alert("Registration successful!");
                                 window.location.href = "/html/loginsignup/details.html";
                             },

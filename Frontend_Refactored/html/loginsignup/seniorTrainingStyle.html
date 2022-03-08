@@ -63,13 +63,16 @@
                             var datas= JSON.parse(localStorage.info);
                             datas.Senior_type = this.Senior_type;
                             $.ajax({
-                                url: "",
+                                url: "http://127.0.0.1:8000/api/users/profile/create",
                                 type: "post",
                                 dataType: "json",
                                 data: datas,
                                 contentType: "application/json",
+                                headers: {
+                                    Authorization: 'Bearer ' + window.localStorage.getItem('token')
+                                },
                                 success: function(rs) {
-                                    window.location.href = '/html/loginsignup/motivationalMessage.html';
+                                    window.location.href = './motivationalMessage.html';
                                 },
                                 error: function(xhr, status, error){
                                     var errorMessage = xhr.status + ': ' + xhr.statusText
